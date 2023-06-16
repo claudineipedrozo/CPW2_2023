@@ -1,0 +1,9 @@
+Exemplo05
+
+name: string
+type: string
+language: string
+genres: string[]
+isRunning: boolean
+imageUrl: string
+channel: string

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <title>Tabela</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form-area">
+            <form id="product-form" onsubmit="saveProduct(event)">
+                <input 
+                    type="text"
+                    id="product-name"
+                    placeholder="Digite o produto"
+                    required>
+                
+                <input 
+                    type="text"
+                    id="product-price"
+                    
+                    placeholder="Digite o preço do produto"
+                    required>
+                
+                <input 
+                    type="text"
+                    id="product-stock"
+                    placeholder="Digite a quantidade do produto"
+                    required>
+
+                <button id="submit-button">Cadastrar</button>
+            </form>
+        </div>
+
+        <h2 id="products-area-title">Produtos</h2>
+
+        <div id="products-area"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
